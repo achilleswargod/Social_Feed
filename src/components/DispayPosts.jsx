@@ -1,7 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-const DispayPosts = (props) => {
-  return <div>I'm from the Display Posts component!</div>;
+const DisplayPosts = ({ entries }) => {
+  return (
+    <ul>
+      {entries.map((entry, i) => (
+        <li>listItem</li>
+      ))}
+    </ul>
+  );
 };
 
-export default NamePresenter;
+export default DisplayPosts;

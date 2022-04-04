@@ -1,12 +1,18 @@
-import React, { useState, useEffect } from "react";
-import NamePresenter from "./components/DispayPosts";
+import React, { useState } from "react";
+import DisplayPosts from "./components/DispayPosts";
 
 function App() {
-  const [entries, setEntries] = useState([{weight: 175, date:}]);
+  const [entries, setEntries] = useState([
+    {
+      name: "Dre Vargas",
+      date: "04-04-2022",
+      post: "I love trying to recreate social media!",
+    },
+  ]);
+
   return (
     <div>
-      Hello World!
-      <NamePresenter />
+      <DisplayPosts entries={entries} />
     </div>
   );
 }
