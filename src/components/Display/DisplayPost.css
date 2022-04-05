@@ -1,0 +1,10 @@
+.border-box {
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 1em;
+}
+
+.displayPost{
+    background-color: white;
+}
