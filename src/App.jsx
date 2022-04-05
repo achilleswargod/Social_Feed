@@ -6,7 +6,6 @@ function App() {
   const [post, setPost] = useState([
     {
       name: "Dre Vargas",
-      date: "04-04-2022",
       post: "I love trying to recreate social media!",
     },
   ]);

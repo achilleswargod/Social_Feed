@@ -1,1 +1,7 @@
-return <nav className="navbar"></nav>;
+const NavBar = (props) => {
+    return ( 
+        
+     );
+}
+ 
+export default NavBar;
