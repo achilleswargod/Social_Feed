@@ -3,6 +3,7 @@ import DisplayPosts from "./components/Display/DispayPosts";
 import CreatePost from "./components/Create/CreatePost";
 import NavBar from "./components/Display/NavBar.jsx";
 import "./components/Display/NavBar.css";
+import "./components/Create/CreatePost.css";
 
 function App() {
   const [post, setPost] = useState([
@@ -20,8 +21,8 @@ function App() {
   return (
     <div>
       <NavBar NavBar={NavBar} />
-      <DisplayPosts parentPosts={post} />
       <CreatePost addNewPost={addNewPost} />
+      <DisplayPosts parentPosts={post} />
     </div>
   );
 }

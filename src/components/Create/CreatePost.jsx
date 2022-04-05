@@ -32,7 +32,9 @@ const CreatePost = (props) => {
           onChange={(event) => setPost(event.target.value)}
         />
       </div>
-      <button type="submit">Create</button>
+      <button classname="subButton" type="submit">
+        Create
+      </button>
     </form>
   );
 };
