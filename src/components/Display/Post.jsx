@@ -2,28 +2,34 @@ import React, { useState } from "react";
 import "./Post.css";
 
 const TheButton = (props) => {
-  const [likeActive, setLikeActive] = useState(false);
-  const [dislikeActive, setDisLikeActive] = useState(true);
+  const [likeActive, setLikeActive] = useState("inactive");
+  const [dislikeActive, setDisLikeActive] = useState("inactive");
 
   function likeComment() {
-    if (!likeActive) {
-      setLikeActive(true);
-      setDisLikeActive(false);
+    if (likeActive === "inactive") {
+      setLikeActive("active");
+    } else {
+      setLikeActive("inactive");
     }
   }
 
   function dislikeComment() {
-    if (!dislikeActive) {
-      setDisLikeActive(true);
-      setLikeActive(false);
+    if (dislikeActive === "inactive") {
+      setDisLikeActive("active");
+    } else {
+      setDisLikeActive("inactive");
     }
   }
 
   return (
     <div className="buttons">
       <div></div>
-      <button onClick={likeComment}>👍 {likeActive}</button>
-      <button onClick={dislikeComment}>👎 {dislikeActive}</button>
+      <button className={likeActive} onClick={likeComment}>
+        👍
+      </button>
+      <button className={dislikeActive} onClick={dislikeComment}>
+        👎
+      </button>
     </div>
   );
 };
