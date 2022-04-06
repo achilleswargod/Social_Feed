@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import "./Post.css";
 
-const Post = (props) => {
+const TheButton = (props) => {
   const [likeActive, setLikeActive] = useState(false);
   const [dislikeActive, setDisLikeActive] = useState(true);
 
@@ -19,12 +20,12 @@ const Post = (props) => {
   }
 
   return (
-    <div className="App">
+    <div className="buttons">
       <div></div>
-      <button onClick={likeComment}>like {likeActive}</button>
-      <button onClick={dislikeComment}>dislike {dislikeActive}</button>
+      <button onClick={likeComment}>👍 {likeActive}</button>
+      <button onClick={dislikeComment}>👎 {dislikeActive}</button>
     </div>
   );
 };
 
-export default Post;
+export default TheButton;

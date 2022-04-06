@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import DisplayPosts from "./components/Display/DispayPosts";
 import CreatePost from "./components/Create/CreatePost";
 import NavBar from "./components/Display/NavBar.jsx";
-import Post from "./components/Post";
 import "./components/Display/NavBar.css";
 import "./components/Create/CreatePost.css";
 
@@ -32,7 +31,6 @@ function App() {
       <NavBar NavBar={NavBar} />
       <CreatePost addNewPost={addNewPost} />
       <DisplayPosts parentPosts={post} />
-      <Post />
     </div>
   );
 }

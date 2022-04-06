@@ -1,5 +1,7 @@
 import React from "react";
 import "./DisplayPost.css";
+import TheButton from "./Post.jsx";
+import theButton from "./Post.jsx";
 
 const DisplayPosts = (props) => {
   return (
@@ -11,6 +13,7 @@ const DisplayPosts = (props) => {
               <div className="border-box">
                 <td>{post.name}</td>
                 <td>{post.post}</td>
+                <TheButton buttons={theButton} />
               </div>
             </tr>
           );
